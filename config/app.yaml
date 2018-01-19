@@ -1,0 +1,4 @@
+server:
+  port: 8004
+  devPort: 9008
+  debugPort: 7008
