@@ -3,6 +3,7 @@ const os = require('os')
 const HappyPack = require('happypack')
 const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length})
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const baseConfig = require('./webpack.config.base')
 
 module.exports = merge({
@@ -41,6 +42,10 @@ module.exports = merge({
     new ExtractTextPlugin({
       filename: '[contenthash:22].css',
       allChunks: true
+    }),
+    new UglifyJsPlugin({
+      parallel: true,
+      sourceMap: false
     })
   ]
 }, baseConfig)
