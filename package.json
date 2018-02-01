@@ -60,6 +60,7 @@
     "lint-staged": "^6.0.0",
     "nodemon": "^1.14.9",
     "postcss-loader": "^2.0.10",
+    "raw-loader": "^0.5.1",
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
@@ -78,12 +79,15 @@
     "koa-logger": "^3.1.0",
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.3.0",
+    "nprogress": "^0.2.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.8",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   }
 }

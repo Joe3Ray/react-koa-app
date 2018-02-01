@@ -37,7 +37,8 @@ app.use(router.routes(), router.allowedMethods())
 /* istanbul ignore if  */
 if (require.main === module) {
   app.listen(port, () => {
-    app.log.info(`server started at localhost: ${port}`)
+    // eslint-disable-next-line
+    console.log(`server started at localhost: ${port}`)
   })
 } else {
   module.exports = app

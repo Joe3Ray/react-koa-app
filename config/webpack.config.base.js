@@ -14,8 +14,8 @@ const env = process.env.NODE_ENV || 'development'
 module.exports = {
   context: srcPath,
   entry: {
-    app: 'index.js',
-    vendors: 'vendors.js'
+    app: './index.js',
+    vendors: './vendors.js'
   },
   output: {
     path: buildPath,
