@@ -1,7 +1,5 @@
 # react-koa-app
 
----
-
 > 基于 React 和 Koa2 的项目
 
 ## 初始化
