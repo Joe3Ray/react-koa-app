@@ -4,6 +4,7 @@ const HappyPack = require('happypack')
 const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length})
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const path = require('path')
 const baseConfig = require('./webpack.config.base')
 
 module.exports = merge({
@@ -21,6 +22,8 @@ module.exports = merge({
   )
 })({
   output: {
+    path: path.resolve(__dirname, '../server/static'),
+    publicPath: '/static',
     filename: '[name].[chunkhash].js',
     chunkFilename: '[chunkhash].js'
   },
