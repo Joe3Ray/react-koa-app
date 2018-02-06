@@ -21,12 +21,6 @@ module.exports = merge({
     }
   )
 })({
-  output: {
-    path: path.resolve(__dirname, '../server/static'),
-    publicPath: '/static',
-    filename: '[name].[chunkhash].js',
-    chunkFilename: '[chunkhash].js'
-  },
   plugins: [
     new HappyPack({
       id: 'pic',
@@ -51,4 +45,11 @@ module.exports = merge({
       sourceMap: false
     })
   ]
-}, baseConfig)
+}, baseConfig, {
+  output: {
+    path: path.resolve(__dirname, '../server/static'),
+    publicPath: '/static/',
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[chunkhash].js'
+  }
+})

@@ -4,6 +4,7 @@ const fs = require('fs-extra')
 const webpack = require('webpack')
 const glob = require('glob')
 const execa = require('execa')
+const Promise = require('bluebird')
 
 Promise.promisifyAll(fs)
 
