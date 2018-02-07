@@ -21,6 +21,17 @@
       "npm run lint"
     ]
   },
+  "jest": {
+    "verbose": true,
+    "notify": true,
+    "collectCoverage": true,
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "html",
+      "text",
+      "text-summary"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Joe3Ray/react-koa-app.git"
