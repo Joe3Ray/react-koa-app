@@ -43,7 +43,7 @@ describe('server 服务', () => {
     })
 
     await request()
-      .get('/common/app_info')
+      .get('/')
       .expect(200)
       .then(res => {
         expect(res.text).toBe('ok')
