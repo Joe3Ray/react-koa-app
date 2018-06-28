@@ -1,7 +1,7 @@
 {
-  "name": "react-koa-app",
-  "version": "1.0.0",
-  "description": "scaffold for create web app with react and koa",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
   "main": "server/index.js",
   "engines": {
     "node": "8.9.0",
@@ -14,7 +14,8 @@
     "test": "jest --forceExit",
     "lint": "eslint . --fix",
     "precommit": "lint-staged && npm test",
-    "deploy": "sh tools/deploy.sh"
+    "deploy": "sh tools/deploy.sh",
+    "build": "webpack --config webpack.prod.js"
   },
   "lint-staged": {
     "*.js": [
