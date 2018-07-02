@@ -7,12 +7,12 @@ const initalStateUserInfo = im.fromJS({
 
 export default (state = initalStateUserInfo, action) => {
   switch (action.type) {
-    case types.FETCH_INFO: {
-      const newUserInfo = im.fromJS(action.result)
+  case types.FETCH_INFO: {
+    const newUserInfo = im.fromJS(action.result)
 
-      return state.set('info', newUserInfo)
-    }
-    default:
-      return state
+    return state.set('info', newUserInfo)
+  }
+  default:
+    return state
   }
 }
