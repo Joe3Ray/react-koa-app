@@ -1,7 +1,7 @@
 {
-  "name": "react-koa-app",
-  "version": "1.0.0",
-  "description": "scaffold for create web app with react and koa",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
   "main": "server/index.js",
   "engines": {
     "node": "8.9.0",
@@ -14,7 +14,8 @@
     "test": "jest --forceExit",
     "lint": "eslint . --fix",
     "precommit": "lint-staged && npm test",
-    "deploy": "sh tools/deploy.sh"
+    "deploy": "sh tools/deploy.sh",
+    "build": "webpack --config webpack.prod.js"
   },
   "lint-staged": {
     "*.js": [
@@ -56,6 +57,7 @@
   },
   "homepage": "https://github.com/Joe3Ray/react-koa-app#readme",
   "devDependencies": {
+    "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -67,8 +69,9 @@
     "body-parser": "^1.18.2",
     "css-loader": "^0.28.8",
     "dev-ip": "^1.0.1",
-    "eslint": "^4.15.0",
+    "eslint": "^5.0.1",
     "eslint-config-joeray61": "^2.0.1",
+    "eslint-plugin-react": "^7.10.0",
     "execa": "^0.9.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",

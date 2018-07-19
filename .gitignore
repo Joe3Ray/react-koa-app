@@ -3,3 +3,4 @@ server/views
 server/static
 build
 coverage
+.DS_Store
